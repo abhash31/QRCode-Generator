@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#page-title{
+    position: fixed;
+    top: 15px;
+    /* left: 30px; */
+    cursor: default;
+}
+
+.float-bottom{
+    position: fixed;
+    bottom: 15px;
+    cursor: default;
+}
+
+#qr-code{
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.container{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+form{
+    margin-bottom: 2.5rem; 
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    padding: 0px 10px;
+    margin-right: 5px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 3px;
+    border: 1.5px solid black;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.save-btn{
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    font-size: 13px;
+}
+
+.content{
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+    #page-title{
+        font-size: 20px;
+        left: auto;
+    }
+    .flex{
+        flex-direction: column;
+        gap: 10px;
+    }
+    form{
+        margin-bottom: 1rem;
+    }
+    input{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    #page-title{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    input{
+        width: 250px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

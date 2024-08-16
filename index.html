@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>QRCode Generator</title>
+</head>
+<body class="poppins-regular">
+    <div class="container flex flex-column">
+        <h2 onclick="window.location.reload()" id="page-title">QR-Code Generator &#x1F525</h2>
+        <form action="/" id="qr-form" class="flex">
+            <input id="user-input" placeholder="Enter URL or text here" autocomplete="off" class="poppins-medium" required/>
+            <button id="submit-btn" class="poppins-bold btn">Generate QR-Code</button>
+        </form>
+        <div class="content flex flex-column">
+            <div id="qr-code"></div>
+            <a href="#" class="btn save-btn poppins-bold" style="visibility: hidden;">Download QR-Code</a>
+        </div>
+        <p class="float-bottom" id="page-foot">Made with &#x2764 by Abhash</p>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
